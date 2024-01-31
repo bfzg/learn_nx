@@ -55,7 +55,8 @@
       },
       "library": {
         "style": "less",
-        "linter": "eslint"
+        "linter": "eslint",
+        "unitTestRunner": "none"
       }
     }
   }
