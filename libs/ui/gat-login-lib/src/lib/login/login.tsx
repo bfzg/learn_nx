@@ -8,7 +8,7 @@ export interface ILoginParams {
   refreshCaptcha: () => void; // 刷新验证码
 }
 
-const Login: React.FC<ILoginParams> = ({version,isLoading,onFinish,refreshCaptcha}) => {
+export const Login: React.FC<ILoginParams> = ({version,isLoading,onFinish,refreshCaptcha}) => {
   const [form] = Form.useForm();
 
   return (
@@ -78,5 +78,3 @@ const Login: React.FC<ILoginParams> = ({version,isLoading,onFinish,refreshCaptch
     </div>
   );
 };
-
-export default Login;

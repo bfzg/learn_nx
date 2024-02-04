@@ -1,12 +1,16 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.less';
-
-import NxWelcome from './nx-welcome';
-
+import { Login } from '@lnton-worksapce/login-lib';
 export function App() {
   return (
     <div>
-      <NxWelcome title="open-cvr" />
+      <Login
+        version="0.0.1"
+        onFinish={() => {
+          console.log();
+        }}
+        refreshCaptcha={() => {
+          console.log();
+        }}
+      />
     </div>
   );
 }
