@@ -1,1 +1,1 @@
-export * from './lib/gat-login-lib';
+export * from './lib/login';
