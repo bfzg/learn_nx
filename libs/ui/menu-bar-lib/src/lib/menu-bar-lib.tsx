@@ -1,6 +1,4 @@
-
 import React from 'react';
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import { Menu, MenuProps } from 'antd';
 
 type MenuItem = Required<MenuProps>['items'][number];
@@ -14,6 +12,7 @@ export interface MetaProps {
 	title: string;
 	key?: string;
 	icon?: React.ReactNode;
+	isShow:boolean;
 }
 export interface RouteObject {
 	caseSensitive?: boolean;
@@ -46,6 +45,7 @@ export function MenuBarLib(props: MenuBarLibProps) {
 	//处理 菜单
 	const deepLoopMenu = (menuList: RouteObject[],newArr: MenuItem[] = []) =>{
 		menuList.forEach((item:RouteObject)=>{
+			if(item.meta?.isShow) return
 			if(!item.children?.length) return newArr.push(getItem(item.meta?.title,item.path,item.meta?.icon))
 			newArr.push(getItem(item.meta?.title, item.path, item.meta?.icon, deepLoopMenu(item.children)));
 		})
