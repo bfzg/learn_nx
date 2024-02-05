@@ -6,7 +6,7 @@
 	},
 	"root": true,
 	"ignorePatterns": ["**/*"],
-	"plugins": ["@nx", "react", "@typescript-eslint", "react-hooks", "prettier"],
+	"plugins": ["@nx", "react", "@typescript-eslint", "react-hooks", "prettier","import"],
 	"overrides": [
 		{
 			"files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -80,6 +80,7 @@
 
 		// react (https://github.com/jsx-eslint/eslint-plugin-react)
 		"react-hooks/rules-of-hooks": "off",
-		"react-hooks/exhaustive-deps": "off"
+		"react-hooks/exhaustive-deps": "off",
+		"import/no-unused-modules": [1, { "missingExports": true }]
 	}
 }
