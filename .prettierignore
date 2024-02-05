@@ -1,4 +1,11 @@
 # Add files here to ignore them from prettier formatting
-/dist
 /coverage
 /.nx/cache
+
+/dist/*
+.local
+/node_modules/**
+
+**/*.svg
+**/*.sh
+

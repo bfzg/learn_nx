@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@lnton-worksapce/layout-lib": ["libs/ui/layout-lib/src/index.ts"],
       "@lnton-worksapce/login-lib": ["libs/ui/gat-login-lib/src/index.ts"],
       "@lnton-worksapce/menu-bar-lib": ["libs/ui/menu-bar-lib/src/index.ts"]
     }
