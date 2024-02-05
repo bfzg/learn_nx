@@ -1,10 +1,10 @@
-import { MenuBarLib } from '@lnton-worksapce/menu-bar-lib';
+import {HashRouter} from 'react-router-dom'
 
 export function App() {
   return (
-    <div>
-      <MenuBarLib />
-    </div>
+    <HashRouter>
+
+    </HashRouter>
   );
 }
 
