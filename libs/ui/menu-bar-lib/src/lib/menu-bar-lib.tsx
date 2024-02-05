@@ -56,6 +56,8 @@ export function MenuBarLib(props: MenuBarLibProps) {
     console.log('click ', e);
   };
 
+	//TODO 这里数据items 是 deepLoopMenu 遍历后的值 可以这样写 setMenuList(deepLoopFloat(data));
+
   return (
   <Menu
     onClick={onClick}
