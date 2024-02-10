@@ -1,9 +1,3 @@
-export interface MetaProps {
-	keepAlive?: boolean;
-	requiresAuth?: boolean;
-	title: string;
-	key?: string;
-}
 
 export interface RouteObject {
 	caseSensitive?: boolean;
@@ -13,4 +7,13 @@ export interface RouteObject {
 	path?: string;
 	meta?: MetaProps;
 	isLink?: string;
+}
+
+export interface MetaProps {
+	keepAlive?: boolean;
+	requiresAuth?: boolean;
+	key?: string;
+	title?: string;
+	icon?: React.ReactNode;
+	isShow:boolean;
 }
