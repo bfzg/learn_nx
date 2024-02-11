@@ -1,7 +1,7 @@
 import React from 'react'
 import {Login as LoginComponent} from '@lnton-worksapce/login-lib'
 
-const Login = () => {
+const View:React.FC = () => {
 	return (
 		<div>
 			<LoginComponent version='0.0.1' onFinish={()=>{}} refreshCaptcha={()=>{}}/>
@@ -9,4 +9,4 @@ const Login = () => {
 	)
 }
 
-export default Login
+export default View;
