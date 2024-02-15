@@ -1,24 +1,23 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2020", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@lnton-worksapce/layout-lib": ["libs/ui/layout-lib/src/index.ts"],
-      "@lnton-worksapce/login-lib": ["libs/ui/gat-login-lib/src/index.ts"],
-      "@lnton-worksapce/menu-bar-lib": ["libs/ui/menu-bar-lib/src/index.ts"]
-    }
-  },
-  "exclude": ["node_modules", "tmp"]
+	"compileOnSave": false,
+	"compilerOptions": {
+		"rootDir": ".",
+		"sourceMap": true,
+		"declaration": false,
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"importHelpers": true,
+		"target": "es2015",
+		"module": "esnext",
+		"lib": ["es2020", "dom"],
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+		"baseUrl": ".",
+		"paths": {
+			"@lnton-worksapce/login-lib": ["libs/ui/gat-login-lib/src/index.ts"],
+			"@lnton-worksapce/menu-bar-lib": ["libs/ui/menu-bar-lib/src/index.ts"]
+		}
+	},
+	"exclude": ["node_modules", "tmp"]
 }

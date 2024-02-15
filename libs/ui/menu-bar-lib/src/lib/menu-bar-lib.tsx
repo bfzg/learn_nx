@@ -4,16 +4,10 @@ import { Menu, MenuProps } from 'antd';
 type MenuItem = Required<MenuProps>['items'][number];
 
 
-export interface MenuBarLibProps {}
-
-export interface MetaProps {
-	keepAlive?: boolean;
-	requiresAuth?: boolean;
-	title: string;
-	key?: string;
-	icon?: React.ReactNode;
-	isShow:boolean;
+export interface MenuBarLibProps {
+	routerList:RouteObject[]
 }
+
 export interface RouteObject {
 	caseSensitive?: boolean;
 	children?: RouteObject[];
@@ -22,6 +16,15 @@ export interface RouteObject {
 	path: string;
 	meta?: MetaProps;
 	isLink?: string;
+}
+
+export interface MetaProps {
+	keepAlive?: boolean;
+	requiresAuth?: boolean;
+	title: string;
+	key?: string;
+	icon?: React.ReactNode;
+	isShow:boolean;
 }
 
 function getItem(
@@ -40,7 +43,7 @@ function getItem(
   } as MenuItem;
 }
 
-export function MenuBarLib(props: MenuBarLibProps) {
+export function MenuBar(props: MenuBarLibProps) {
 
 	//处理 菜单
 	const deepLoopMenu = (menuList: RouteObject[],newArr: MenuItem[] = []) =>{
