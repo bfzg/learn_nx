@@ -16,7 +16,8 @@
 		"baseUrl": ".",
 		"paths": {
 			"@lnton-worksapce/login-lib": ["libs/ui/gat-login-lib/src/index.ts"],
-			"@lnton-worksapce/menu-bar-lib": ["libs/ui/menu-bar-lib/src/index.ts"]
+			"@lnton-worksapce/menu-bar-lib": ["libs/ui/menu-bar-lib/src/index.ts"],
+			"@lnton-worksapce/number-input-lib": ["libs/ui/number-input-lib/src/index.ts"]
 		}
 	},
 	"exclude": ["node_modules", "tmp"]

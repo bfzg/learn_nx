@@ -7,7 +7,7 @@ import lazyLoad from "../utils/lazyLoad"
 export const rootRouter: RouteObject[] = [
 	{
 		path:"/",
-		element:<Navigate to="/login" />
+		element:<Navigate to="/home" />
 	},
 	{
 		path:"/login",
