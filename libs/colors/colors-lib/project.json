@@ -1,0 +1,19 @@
+{
+	"name": "colors-lib",
+	"$schema": "../../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "libs/colors/colors-lib/src",
+	"projectType": "library",
+	"targets": {
+		"build": {
+			"executor": "@nx/vite:build",
+			"outputs": ["{options.outputPath}"],
+			"options": {
+				"outputPath": "dist/libs/colors/colors-lib"
+			}
+		},
+		"lint": {
+			"executor": "@nx/eslint:lint"
+		}
+	},
+	"tags": []
+}
